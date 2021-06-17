@@ -6,18 +6,21 @@ Introduction
 ------------
 Neuromorphic computer architectures attempt to model the behaviour of the human brain byconstructing networks of neurons.  Unlike the neurons used in artifical neural network (such as thoseused in deep learning), these neurons arespiking, and their networks known as Spiking NeuralNetworks (SNNs) [1].  The general structure of a neuron and its is shown in Figure 1. The dendrites act as inputs to the main cell body orsoma.  They transport streams of electrical current, in the form of potentials, from connected neurons.  These accumulate an action potential inthe soma.  When the voltage reaches a critical value, the soma discharges, its internal voltage and apotential spike is output of theaxonto neighbouring neurons [2]. An example model of this behaviour is the Izhikevich neuron, which has various types of neuron models, as shown in Figure 2.
 
-<img align="left" alt="neuron" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/master/images/neuron.png?raw=true"  />
+<img align="left" alt="neuron" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/izhikevich_neuron.png"  />
+
+
+
 
 <img align="left" alt="izneuron" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/master/images/izhikevich_neuron.png?raw=true"  />
 
 In the Izhikevich spiking neuron the internal potential <em> v </em> is updated to its next value <em> v′ </em> by a stream of incoming voltages on the dendrites, according to:
 
 ```  
-<em> v' = v + [0.04v^2 + 5v - u + J + 140] </em>
-<em> u' = u + [a(bv - u)] </em>
+v' = v + [0.04v^2 + 5v - u + J + 140] 
+u' = u + [a(bv - u)]
 
-<em> v' = -65 if v' > 30 else v' </em>
-<em> u' = u' + d if v' > 30 else u' </em>
+v' = -65 if v' > 30 else v' 
+u' = u' + d if v' > 30 else u'
 ```
 
 Inital coefficient values:
