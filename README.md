@@ -6,7 +6,11 @@ Introduction
 ------------
 Neuromorphic computer architectures attempt to model the behaviour of the human brain byconstructing networks of neurons.  Unlike the neurons used in artifical neural network (such as thoseused in deep learning), these neurons arespiking, and their networks known as Spiking NeuralNetworks (SNNs) [1].  The general structure of a neuron and its is shown in Figure 1. The dendrites act as inputs to the main cell body orsoma.  They transport streams of electrical current, in the form of potentials, from connected neurons.  These accumulate an action potential inthe soma.  When the voltage reaches a critical value, the soma discharges, its internal voltage and apotential spike is output of theaxonto neighbouring neurons [2]. An example model of this behaviour is the Izhikevich neuron, which has various types of neuron models, as shown in Figure 2.
 
+<<<<<<< HEAD
 <img align="center" alt="neuron" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/neuron.png"  />
+=======
+<img align="center" alt="neuron" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/izhikevich_neuron.png"  />
+>>>>>>> ecaf2ebed48af87366b4111c617811658ffddf73
 
 
 <img align="center" alt="izneuron" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/izhikevich_neuron.png"  />
