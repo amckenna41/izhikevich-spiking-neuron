@@ -1,0 +1,814 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 20 16:49:54 2021
+# Process ID: 23392
+# Current directory: I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/synth_1
+# Command line: vivado.exe -log izhikevichtestfixed1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source izhikevichtestfixed1.tcl
+# Log file: I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/synth_1/izhikevichtestfixed1.vds
+# Journal file: I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source izhikevichtestfixed1.tcl -notrace
+Command: synth_design -top izhikevichtestfixed1 -part xc7k325tfbg676-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-1540] The version limit for your license is '2020.03' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xc7k325tfbg676-3
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15768 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 861.555 ; gain = 177.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1.vhd:719]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_default_clock_driver' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1.vhd:692]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/xlclockdriver_rd.vhd:59]
+	Parameter period bound to: 1 - type: integer 
+	Parameter log_2_period bound to: 1 - type: integer 
+	Parameter pipeline_regs bound to: 5 - type: integer 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/single_reg_w_init.vhd:37]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (1#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (2#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg_w_init.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/xlclockdriver_rd.vhd:212]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (3#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'izhikevichtestfixed1_default_clock_driver' (4#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1.vhd:692]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_struct' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_35e13058dc' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_35e13058dc' (5#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_xladdsub' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:449]
+	Parameter core_name0 bound to: izhikevichtestfixed1_c_addsub_v12_0_i0 - type: string 
+	Parameter a_width bound to: 64 - type: integer 
+	Parameter a_bin_pt bound to: 32 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 64 - type: integer 
+	Parameter b_bin_pt bound to: 32 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 64 - type: integer 
+	Parameter s_bin_pt bound to: 32 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 65 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 1 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 65 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'izhikevichtestfixed1_c_addsub_v12_0_i0' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/synth_1/.Xil/Vivado-23392-ashel-0608/realtime/izhikevichtestfixed1_c_addsub_v12_0_i0_stub.vhdl:5' bound to instance 'core_instance0' of component 'izhikevichtestfixed1_c_addsub_v12_0_i0' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:534]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_c_addsub_v12_0_i0' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/synth_1/.Xil/Vivado-23392-ashel-0608/realtime/izhikevichtestfixed1_c_addsub_v12_0_i0_stub.vhdl:16]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:20' bound to instance 'extra_reg' of component 'synth_reg' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:573]
+INFO: [Synth 8-638] synthesizing module 'synth_reg' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:30]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:31]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'srlc33e' (6#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg' (7#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'izhikevichtestfixed1_xladdsub' (8#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:449]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_xladdsub__parameterized0' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:449]
+	Parameter core_name0 bound to: izhikevichtestfixed1_c_addsub_v12_0_i1 - type: string 
+	Parameter a_width bound to: 64 - type: integer 
+	Parameter a_bin_pt bound to: 32 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 64 - type: integer 
+	Parameter b_bin_pt bound to: 32 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 64 - type: integer 
+	Parameter s_bin_pt bound to: 32 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 65 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 65 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'izhikevichtestfixed1_c_addsub_v12_0_i1' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/synth_1/.Xil/Vivado-23392-ashel-0608/realtime/izhikevichtestfixed1_c_addsub_v12_0_i1_stub.vhdl:5' bound to instance 'core_instance1' of component 'izhikevichtestfixed1_c_addsub_v12_0_i1' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:545]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_c_addsub_v12_0_i1' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/synth_1/.Xil/Vivado-23392-ashel-0608/realtime/izhikevichtestfixed1_c_addsub_v12_0_i1_stub.vhdl:16]
+INFO: [Synth 8-256] done synthesizing module 'izhikevichtestfixed1_xladdsub__parameterized0' (8#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:449]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_xlmult' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:701]
+	Parameter core_name0 bound to: izhikevichtestfixed1_mult_gen_v12_0_i0 - type: string 
+	Parameter a_width bound to: 64 - type: integer 
+	Parameter a_bin_pt bound to: 32 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter b_width bound to: 64 - type: integer 
+	Parameter b_bin_pt bound to: 32 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter p_width bound to: 64 - type: integer 
+	Parameter p_bin_pt bound to: 32 - type: integer 
+	Parameter p_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter c_a_width bound to: 64 - type: integer 
+	Parameter c_b_width bound to: 64 - type: integer 
+	Parameter c_type bound to: 0 - type: integer 
+	Parameter c_a_type bound to: 0 - type: integer 
+	Parameter c_b_type bound to: 0 - type: integer 
+	Parameter c_pipelined bound to: 1 - type: integer 
+	Parameter c_baat bound to: 64 - type: integer 
+	Parameter multsign bound to: 2 - type: integer 
+	Parameter c_output_width bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'izhikevichtestfixed1_mult_gen_v12_0_i0' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/synth_1/.Xil/Vivado-23392-ashel-0608/realtime/izhikevichtestfixed1_mult_gen_v12_0_i0_stub.vhdl:5' bound to instance 'core_instance0' of component 'izhikevichtestfixed1_mult_gen_v12_0_i0' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:763]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_mult_gen_v12_0_i0' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/synth_1/.Xil/Vivado-23392-ashel-0608/realtime/izhikevichtestfixed1_mult_gen_v12_0_i0_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'izhikevichtestfixed1_xlmult' (9#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:701]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_85c9e3d5de' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_85c9e3d5de' (10#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_3f18486349' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_3f18486349' (11#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_ec32efbc5f' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_ec32efbc5f' (12#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_7f6c093904' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_7f6c093904' (13#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_7ffe492877' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:145]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_7ffe492877' (14#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_4de931074e' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:164]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_4de931074e' (15#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_94173134ae' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:183]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_94173134ae' (16#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_xldelay' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:212]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:20' bound to instance 'synth_reg_srl_inst' of component 'synth_reg' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:239]
+INFO: [Synth 8-256] done synthesizing module 'izhikevichtestfixed1_xldelay' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_xldelay__parameterized0' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:212]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 4 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:20' bound to instance 'synth_reg_srl_inst' of component 'synth_reg' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'synth_reg__parameterized2' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:30]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 4 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e__parameterized1' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:31]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 4 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:64]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'srlc33e__parameterized1' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg__parameterized2' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'izhikevichtestfixed1_xldelay__parameterized0' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_xldelay__parameterized1' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:212]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:20' bound to instance 'synth_reg_srl_inst' of component 'synth_reg' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'synth_reg__parameterized4' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:30]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e__parameterized3' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:31]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'srlc33e__parameterized3' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg__parameterized4' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'izhikevichtestfixed1_xldelay__parameterized1' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_xldelay__parameterized2' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:212]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:20' bound to instance 'synth_reg_srl_inst' of component 'synth_reg' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'synth_reg__parameterized6' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:30]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e__parameterized5' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:31]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'srlc33e__parameterized5' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg__parameterized6' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'izhikevichtestfixed1_xldelay__parameterized2' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'izhikevichtestfixed1_xldelay__parameterized3' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:212]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 7 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:20' bound to instance 'synth_reg_srl_inst' of component 'synth_reg' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'synth_reg__parameterized8' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:30]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 7 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e__parameterized7' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:31]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'srlc33e__parameterized7' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg__parameterized8' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'izhikevichtestfixed1_xldelay__parameterized3' (17#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_7b810557c3' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:280]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_7b810557c3' (18#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:280]
+INFO: [Synth 8-638] synthesizing module 'sysgen_mux_acaa2b7c81' [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:308]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_mux_acaa2b7c81' (19#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1_entity_declarations.vhd:308]
+INFO: [Synth 8-256] done synthesizing module 'izhikevichtestfixed1_struct' (20#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'izhikevichtestfixed1' (21#1) [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/imports/sysgen/izhikevichtestfixed1.vhd:719]
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xlmult has unconnected port core_ce
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xlmult has unconnected port core_clr
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xlmult has unconnected port core_clk
+WARNING: [Synth 8-3331] design synth_reg has unconnected port clr
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xladdsub has unconnected port c_in[0]
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xladdsub__parameterized0 has unconnected port c_in[0]
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xladdsub__parameterized0 has unconnected port clr
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xladdsub__parameterized0 has unconnected port rst[0]
+WARNING: [Synth 8-3331] design sysgen_mux_acaa2b7c81 has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_relational_7b810557c3 has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_relational_7b810557c3 has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_relational_7b810557c3 has unconnected port clr
+WARNING: [Synth 8-3331] design synth_reg__parameterized8 has unconnected port clr
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xldelay__parameterized3 has unconnected port rst
+WARNING: [Synth 8-3331] design synth_reg__parameterized2 has unconnected port clr
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xldelay__parameterized0 has unconnected port rst
+WARNING: [Synth 8-3331] design synth_reg__parameterized6 has unconnected port clr
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xldelay__parameterized2 has unconnected port rst
+WARNING: [Synth 8-3331] design synth_reg__parameterized4 has unconnected port clr
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xldelay__parameterized1 has unconnected port rst
+WARNING: [Synth 8-3331] design izhikevichtestfixed1_xldelay has unconnected port rst
+WARNING: [Synth 8-3331] design sysgen_constant_94173134ae has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_94173134ae has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_94173134ae has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_4de931074e has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_4de931074e has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_4de931074e has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_7ffe492877 has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_7ffe492877 has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_7ffe492877 has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_7f6c093904 has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_7f6c093904 has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_7f6c093904 has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_ec32efbc5f has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_ec32efbc5f has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_ec32efbc5f has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_3f18486349 has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_3f18486349 has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_3f18486349 has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_85c9e3d5de has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_85c9e3d5de has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_85c9e3d5de has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_35e13058dc has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_35e13058dc has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_35e13058dc has unconnected port clr
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 931.055 ; gain = 246.918
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 931.055 ; gain = 246.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 931.055 ; gain = 246.918
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 832 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i1/izhikevichtestfixed1_c_addsub_v12_0_i1/izhikevichtestfixed1_c_addsub_v12_0_i1_in_context.xdc] for cell 'izhikevichtestfixed1_struct/x0_04v_2_5v_u/comp1.core_instance1'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i1/izhikevichtestfixed1_c_addsub_v12_0_i1/izhikevichtestfixed1_c_addsub_v12_0_i1_in_context.xdc] for cell 'izhikevichtestfixed1_struct/x0_04v_2_5v_u/comp1.core_instance1'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i1/izhikevichtestfixed1_c_addsub_v12_0_i1/izhikevichtestfixed1_c_addsub_v12_0_i1_in_context.xdc] for cell 'izhikevichtestfixed1_struct/bv_u/comp1.core_instance1'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i1/izhikevichtestfixed1_c_addsub_v12_0_i1/izhikevichtestfixed1_c_addsub_v12_0_i1_in_context.xdc] for cell 'izhikevichtestfixed1_struct/bv_u/comp1.core_instance1'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/x5v/comp0.core_instance0'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/x5v/comp0.core_instance0'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/a_bv_u/comp0.core_instance0'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/a_bv_u/comp0.core_instance0'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/bv/comp0.core_instance0'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/bv/comp0.core_instance0'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/v_2/comp0.core_instance0'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/v_2/comp0.core_instance0'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/v_2_0_04/comp0.core_instance0'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0/izhikevichtestfixed1_mult_gen_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/v_2_0_04/comp0.core_instance0'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/x0_04v2_5v_u_j_140/comp0.core_instance0'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/x0_04v2_5v_u_j_140/comp0.core_instance0'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/x0_04v_2_5v/comp0.core_instance0'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/x0_04v_2_5v/comp0.core_instance0'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/j_140/comp0.core_instance0'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/j_140/comp0.core_instance0'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/u_a_bv_u/comp0.core_instance0'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/u_a_bv_u/comp0.core_instance0'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/u_d/comp0.core_instance0'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/u_d/comp0.core_instance0'
+Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/v_0_04v2_5v_u_j_140/comp0.core_instance0'
+Finished Parsing XDC File [i:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/sources_1/ip/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0/izhikevichtestfixed1_c_addsub_v12_0_i0_in_context.xdc] for cell 'izhikevichtestfixed1_struct/v_0_04v2_5v_u_j_140/comp0.core_instance0'
+Parsing XDC File [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/constrs_1/imports/sysgen/izhikevichtestfixed1_clock.xdc]
+Finished Parsing XDC File [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/constrs_1/imports/sysgen/izhikevichtestfixed1_clock.xdc]
+Parsing XDC File [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/constrs_1/imports/sysgen/izhikevichtestfixed1.xdc]
+Finished Parsing XDC File [I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.srcs/constrs_1/imports/sysgen/izhikevichtestfixed1.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1052.629 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 832 instances were transformed.
+  FDE => FDRE: 832 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1052.629 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'izhikevichtestfixed1_struct/a_bv_u/comp0.core_instance0' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'izhikevichtestfixed1_struct/bv/comp0.core_instance0' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'izhikevichtestfixed1_struct/v_2/comp0.core_instance0' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'izhikevichtestfixed1_struct/v_2_0_04/comp0.core_instance0' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'izhikevichtestfixed1_struct/x5v/comp0.core_instance0' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tfbg676-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/x0_04v_2_5v_u/\comp1.core_instance1 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/bv_u/\comp1.core_instance1 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/x5v/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/a_bv_u/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/bv/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/v_2/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/v_2_0_04/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/x0_04v2_5v_u_j_140/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/x0_04v_2_5v/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/j_140/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/u_a_bv_u/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/u_d/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for izhikevichtestfixed1_struct/v_0_04v2_5v_u_j_140/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sysgen_mux_acaa2b7c81 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (izhikevichtestfixed1_default_clock_driver/clockdriver/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module izhikevichtestfixed1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name          | RTL Name                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|izhikevichtestfixed1 | izhikevichtestfixed1_struct/u_mux/pipe_16_22_reg[2][63] | 3      | 64    | NO           | NO                 | YES               | 64     | 0       | 
++---------------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------------+----------+
+|      |BlackBox name                          |Instances |
++------+---------------------------------------+----------+
+|1     |izhikevichtestfixed1_mult_gen_v12_0_i0 |         5|
+|2     |izhikevichtestfixed1_c_addsub_v12_0_i1 |         2|
+|3     |izhikevichtestfixed1_c_addsub_v12_0_i0 |         6|
++------+---------------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------------------+------+
+|      |Cell                                              |Count |
++------+--------------------------------------------------+------+
+|1     |izhikevichtestfixed1_c_addsub_v12_0_i0_bbox_0     |     1|
+|2     |izhikevichtestfixed1_c_addsub_v12_0_i0_bbox_0__10 |     1|
+|3     |izhikevichtestfixed1_c_addsub_v12_0_i0_bbox_0__6  |     1|
+|4     |izhikevichtestfixed1_c_addsub_v12_0_i0_bbox_0__7  |     1|
+|5     |izhikevichtestfixed1_c_addsub_v12_0_i0_bbox_0__8  |     1|
+|6     |izhikevichtestfixed1_c_addsub_v12_0_i0_bbox_0__9  |     1|
+|7     |izhikevichtestfixed1_c_addsub_v12_0_i1_bbox_1     |     1|
+|8     |izhikevichtestfixed1_c_addsub_v12_0_i1_bbox_1__2  |     1|
+|9     |izhikevichtestfixed1_mult_gen_v12_0_i0_bbox_2     |     1|
+|10    |izhikevichtestfixed1_mult_gen_v12_0_i0_bbox_2__5  |     1|
+|11    |izhikevichtestfixed1_mult_gen_v12_0_i0_bbox_2__6  |     1|
+|12    |izhikevichtestfixed1_mult_gen_v12_0_i0_bbox_2__7  |     1|
+|13    |izhikevichtestfixed1_mult_gen_v12_0_i0_bbox_2__8  |     1|
+|14    |BUFG                                              |     1|
+|15    |CARRY4                                            |     8|
+|16    |LUT2                                              |    62|
+|17    |LUT3                                              |    64|
+|18    |SRL16E                                            |    64|
+|19    |SRLC32E                                           |   320|
+|20    |FDE                                               |   832|
+|21    |FDRE                                              |   225|
+|22    |FDSE                                              |    31|
+|23    |IBUF                                              |    65|
+|24    |OBUF                                              |    64|
++------+--------------------------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+---------------------------------------------------------+------+
+|      |Instance                             |Module                                                   |Cells |
++------+-------------------------------------+---------------------------------------------------------+------+
+|1     |top                                  |                                                         |  2896|
+|2     |  izhikevichtestfixed1_struct        |izhikevichtestfixed1_struct                              |  2766|
+|3     |    relational                       |sysgen_relational_7b810557c3                             |     8|
+|4     |    a_bv_u                           |izhikevichtestfixed1_xlmult__xdcDup__2                   |   128|
+|5     |    bv                               |izhikevichtestfixed1_xlmult__xdcDup__3                   |   128|
+|6     |    bv_u                             |izhikevichtestfixed1_xladdsub__parameterized0            |    65|
+|7     |    delay                            |izhikevichtestfixed1_xldelay                             |    64|
+|8     |      \srl_delay.synth_reg_srl_inst  |synth_reg_17                                             |    64|
+|9     |        \partial_one.last_srlc33e    |srlc33e_18                                               |    64|
+|10    |    delay1                           |izhikevichtestfixed1_xldelay__parameterized0             |   128|
+|11    |      \srl_delay.synth_reg_srl_inst  |synth_reg__parameterized2_15                             |   128|
+|12    |        \partial_one.last_srlc33e    |srlc33e__parameterized1_16                               |   128|
+|13    |    delay2                           |izhikevichtestfixed1_xldelay_0                           |    64|
+|14    |      \srl_delay.synth_reg_srl_inst  |synth_reg_13                                             |    64|
+|15    |        \partial_one.last_srlc33e    |srlc33e_14                                               |    64|
+|16    |    delay3                           |izhikevichtestfixed1_xldelay__parameterized1             |   128|
+|17    |      \srl_delay.synth_reg_srl_inst  |synth_reg__parameterized4                                |   128|
+|18    |        \partial_one.last_srlc33e    |srlc33e__parameterized3                                  |   128|
+|19    |    delay4                           |izhikevichtestfixed1_xldelay__parameterized2             |   128|
+|20    |      \srl_delay.synth_reg_srl_inst  |synth_reg__parameterized6                                |   128|
+|21    |        \partial_one.last_srlc33e    |srlc33e__parameterized5                                  |   128|
+|22    |    delay5                           |izhikevichtestfixed1_xldelay__parameterized0_1           |   128|
+|23    |      \srl_delay.synth_reg_srl_inst  |synth_reg__parameterized2                                |   128|
+|24    |        \partial_one.last_srlc33e    |srlc33e__parameterized1                                  |   128|
+|25    |    delay7                           |izhikevichtestfixed1_xldelay__parameterized3             |   128|
+|26    |      \srl_delay.synth_reg_srl_inst  |synth_reg__parameterized8                                |   128|
+|27    |        \partial_one.last_srlc33e    |srlc33e__parameterized7                                  |   128|
+|28    |    j_140                            |izhikevichtestfixed1_xladdsub__xdcDup__3                 |   129|
+|29    |      \latency_test.extra_reg        |synth_reg_11                                             |    64|
+|30    |        \partial_one.last_srlc33e    |srlc33e_12                                               |    64|
+|31    |    u_a_bv_u                         |izhikevichtestfixed1_xladdsub__xdcDup__4                 |   129|
+|32    |      \latency_test.extra_reg        |synth_reg_9                                              |    64|
+|33    |        \partial_one.last_srlc33e    |srlc33e_10                                               |    64|
+|34    |    u_d                              |izhikevichtestfixed1_xladdsub__xdcDup__5                 |   129|
+|35    |      \latency_test.extra_reg        |synth_reg_7                                              |    64|
+|36    |        \partial_one.last_srlc33e    |srlc33e_8                                                |    64|
+|37    |    u_mux                            |sysgen_mux_acaa2b7c81                                    |   192|
+|38    |    v_0_04v2_5v_u_j_140              |izhikevichtestfixed1_xladdsub                            |   191|
+|39    |      \latency_test.extra_reg        |synth_reg_5                                              |   126|
+|40    |        \partial_one.last_srlc33e    |srlc33e_6                                                |   126|
+|41    |    v_2                              |izhikevichtestfixed1_xlmult__xdcDup__4                   |   128|
+|42    |    v_2_0_04                         |izhikevichtestfixed1_xlmult                              |   128|
+|43    |    v_mux                            |sysgen_mux_acaa2b7c81_2                                  |   192|
+|44    |    x0_04v2_5v_u_j_140               |izhikevichtestfixed1_xladdsub__xdcDup__1                 |   129|
+|45    |      \latency_test.extra_reg        |synth_reg_3                                              |    64|
+|46    |        \partial_one.last_srlc33e    |srlc33e_4                                                |    64|
+|47    |    x0_04v_2_5v                      |izhikevichtestfixed1_xladdsub__xdcDup__2                 |   129|
+|48    |      \latency_test.extra_reg        |synth_reg                                                |    64|
+|49    |        \partial_one.last_srlc33e    |srlc33e                                                  |    64|
+|50    |    x0_04v_2_5v_u                    |izhikevichtestfixed1_xladdsub__parameterized0__xdcDup__1 |    65|
+|51    |    x5v                              |izhikevichtestfixed1_xlmult__xdcDup__1                   |   128|
++------+-------------------------------------+---------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1066.047 ; gain = 381.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 1066.047 ; gain = 246.918
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1066.047 ; gain = 381.910
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 840 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1086.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 832 instances were transformed.
+  FDE => FDRE: 832 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+202 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 1086.059 ; gain = 701.918
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1086.059 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/synth_1/izhikevichtestfixed1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file izhikevichtestfixed1_utilization_synth.rpt -pb izhikevichtestfixed1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 20 16:50:46 2021...

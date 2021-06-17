@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 20 16:50:54 2021
+# Process ID: 25520
+# Current directory: I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/impl_1
+# Command line: vivado.exe -log izhikevichtestfixed1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source izhikevichtestfixed1.tcl -notrace
+# Log file: I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/impl_1/izhikevichtestfixed1.vdi
+# Journal file: I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source izhikevichtestfixed1.tcl -notrace

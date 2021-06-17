@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Feb 19 23:15:22 2021
+# Process ID: 25084
+# Current directory: I:/part2/netlist_double
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: I:/part2/netlist_double/vivado.log
+# Journal file: I:/part2/netlist_double\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 357.121 ; gain = 59.027
+WARNING: [Coretcl 2-176] No IPs found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'izhikevichtestfloatdouble_floating_point_v7_1_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'izhikevichtestfloatdouble_floating_point_v7_1_i0' to 'izhikevichtestfloatdouble_floating_point_v7_1_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_BRAM_Usage' from 'No_Usage' to 'Full_Usage' has been ignored for IP 'izhikevichtestfloatdouble_floating_point_v7_1_i0'
+WARNING: [IP_Flow 19-4832] The IP name 'izhikevichtestfloatdouble_floating_point_v7_1_i1' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'izhikevichtestfloatdouble_floating_point_v7_1_i1' to 'izhikevichtestfloatdouble_floating_point_v7_1_i1' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_BRAM_Usage' from 'No_Usage' to 'Full_Usage' has been ignored for IP 'izhikevichtestfloatdouble_floating_point_v7_1_i1'
+WARNING: [IP_Flow 19-4832] The IP name 'izhikevichtestfloatdouble_floating_point_v7_1_i2' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'izhikevichtestfloatdouble_floating_point_v7_1_i2' to 'izhikevichtestfloatdouble_floating_point_v7_1_i2' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_BRAM_Usage' from 'No_Usage' to 'Full_Usage' has been ignored for IP 'izhikevichtestfloatdouble_floating_point_v7_1_i2'
+WARNING: [IP_Flow 19-4832] The IP name 'izhikevichtestfloatdouble_floating_point_v7_1_i3' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'izhikevichtestfloatdouble_floating_point_v7_1_i3' to 'izhikevichtestfloatdouble_floating_point_v7_1_i3' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_BRAM_Usage' from 'No_Usage' to 'Full_Usage' has been ignored for IP 'izhikevichtestfloatdouble_floating_point_v7_1_i3'
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 19 23:15:48 2021...

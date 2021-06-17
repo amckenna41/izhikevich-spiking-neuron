@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 20 16:46:43 2021
+# Process ID: 26752
+# Current directory: I:/netlist_fixed/hdl_netlist
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19388 I:\netlist_fixed\hdl_netlist\izhikevichtestfixed1.xpr
+# Log file: I:/netlist_fixed/hdl_netlist/vivado.log
+# Journal file: I:/netlist_fixed/hdl_netlist\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project I:/netlist_fixed/hdl_netlist/izhikevichtestfixed1.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
