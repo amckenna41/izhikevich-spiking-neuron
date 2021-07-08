@@ -11,7 +11,7 @@ Neuromorphic computer architectures attempt to model the behaviour of the human 
 
 <img align="center" alt="neuron" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/izhikevich_neuron.png"  />
 <p align="center">
-<strong> Figure 2: Izhikevich neuron model behaviours. </strong>
+    <strong> Figure 2: Izhikevich neuron model behaviours. </strong>
 </p>
 
 Implementation
@@ -39,14 +39,14 @@ The neuron was realised using Simulink and Xilinx System Generator components. F
 
 <img align="center" alt="simulink" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/simulink.png"  />
 <p align="center">
-<strong> Figure 3: Simulink model for Izhikevich neuron. </strong>
+    <strong> Figure 3: Simulink model for Izhikevich neuron. </strong>
 </p>
 
 Next, the same model was realised using Xilinx System Generator (https://www.xilinx.com/products/design-tools/vivado/integration/sysgen.html). It allowed for the neuron to be realised with timed components on an FPGA (field-programmable-gate-array), giving a more realistic implementation, taking into account the physical resource cost and performance of the individual components in the model [3]. The implementations were optimised using different variations of components as well as the best arthmetic type (floating or fixed-point). Each model was extracted into HDL so that its resource cost could be calculated using the Vivado Design Suite. An example of one of these models can be seen below:
 
 <img align="center" alt="xilinx" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/xilinx.png"  />
 <p align="center">
-<strong> Figure 4: Xilinx System Generator model for Izhikevich neuron. </strong>
+    <strong> Figure 4: Xilinx System Generator model for Izhikevich neuron. </strong>
 </p>
 
 Files
