@@ -70,5 +70,5 @@ References
 [2] Sidiropoulou, K., Pissadaki, E. K., & Poirazi, P. (2006). Inside the brain of a neuron. EMBO reports, 7(9), 886–892. https://doi.org/10.1038/sj.embor.7400789. <br> 
 [3] System generator model-based FPGA design optimization and hardware co-simulation for Lorenz
 chaotic generator. Lei Zhang. Published June 2017. 
-https://ieeexplore.ieee.org/document/7986087?denied.
+https://ieeexplore.ieee.org/document/7986087?denied. <br>
 [4] https://github.com/iandol/spikes/blob/master/Various/izhikevich.m
