@@ -5,9 +5,14 @@ Introduction
 Neuromorphic computer architectures attempt to model the behaviour of the human brain byconstructing networks of neurons.  Unlike the neurons used in artifical neural network (such as thoseused in deep learning), these neurons arespiking, and their networks known as Spiking NeuralNetworks (SNNs) [1].  The general structure of a neuron and its is shown in Figure 1. The dendrites act as inputs to the main cell body orsoma.  They transport streams of electrical current, in the form of potentials, from connected neurons.  These accumulate an action potential inthe soma.  When the voltage reaches a critical value, the soma discharges, its internal voltage and apotential spike is output of theaxonto neighbouring neurons [2]. An example model of this behaviour is the Izhikevich neuron, which has various types of neuron models, as shown in Figure 2.
 
 <img align="center" alt="neuron" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/neuron.png"  />
-<strong> Figure 1: Structure of a neuron. </strong>
-<img align="center" alt="neuron" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/izhikevich_neuron.png"  />
+<p align="center">
+  <strong> Figure 1: Structure of a neuron. </strong>
+</p>
 
+<img align="center" alt="neuron" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/izhikevich_neuron.png"  />
+<p align="center">
+<strong> Figure 2: Izhikevich neuron model behaviours. </strong>
+</p>
 
 Implementation
 ------------
@@ -33,12 +38,16 @@ u = 0
 The neuron was realised using Simulink and Xilinx System Generator components. Firstly, Simulink was used to create an untimed simulation of the model where any timing and overheads were not considered, such as type fo arthmetic used. Basic arthmetic components were used to implement the above equations to generate the spiking behaviour including adds, multiply's, subtract, divides etc. Below is what the untimed version of the model looked like:
 
 <img align="center" alt="simulink" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/simulink.png"  />
-
+<p align="center">
+<strong> Figure 3: Simulink model for Izhikevich neuron. </strong>
+</p>
 
 Next, the same model was realised using Xilinx System Generator (https://www.xilinx.com/products/design-tools/vivado/integration/sysgen.html). It allowed for the neuron to be realised with timed components on an FPGA (field-programmable-gate-array), giving a more realistic implementation, taking into account the physical resource cost and performance of the individual components in the model [3]. The implementations were optimised using different variations of components as well as the best arthmetic type (floating or fixed-point). Each model was extracted into HDL so that its resource cost could be calculated using the Vivado Design Suite. An example of one of these models can be seen below:
 
 <img align="center" alt="xilinx" src="https://github.com/amckenna41/izhikevich-spiking-neuron/blob/main/images/xilinx.png"  />
-
+<p align="center">
+<strong> Figure 4: Xilinx System Generator model for Izhikevich neuron. </strong>
+</p>
 
 Files
 ------
